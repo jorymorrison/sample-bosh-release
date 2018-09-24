@@ -1,0 +1,55 @@
+---
+name: greeter
+
+releases:
+- name: greeter-release
+  version: latest
+
+stemcells:
+- alias: default
+  os: ubuntu-trusty
+  version: latest
+
+update:
+  canaries: 1
+  max_in_flight: 10
+  canary_watch_time: 1000-30000
+  update_watch_time: 1000-30000
+  vm_strategy: create-swap-delete
+
+
+instance_groups:
+- name: app
+  azs:
+  - z2
+  instances: 1
+  vm_type: minimal
+  stemcell: default
+  update:
+    serial: true
+  networks:
+  - name: private
+    static_ips:
+    - 10.0.255.7
+  jobs:
+  - name: app
+    release: greeter-release
+    properties: {}
+- name: router
+  azs:
+  - z1
+  instances: 1
+  vm_type: minimal
+  stemcell: default
+  update:
+    serial: true
+  networks:
+  - name: private
+    static_ips:
+    - 10.0.255.8
+  jobs:
+  - name: router
+    release: greeter-release
+    properties:
+      upstreams:
+        - 10.0.255.7:8080

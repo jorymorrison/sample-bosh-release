@@ -1,0 +1,2 @@
++ dig +tcp +time=10 +tries=1 -p 53 upcheck.bosh-dns. @169.254.0.2
++ dig +notcp +time=10 +tries=1 -p 53 upcheck.bosh-dns. @169.254.0.2

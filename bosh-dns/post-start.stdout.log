@@ -1,0 +1,36 @@
+
+; <<>> DiG 9.9.5-3ubuntu0.17-Ubuntu <<>> +tcp +time=10 +tries=1 -p 53 upcheck.bosh-dns. @169.254.0.2
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 64759
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;upcheck.bosh-dns.		IN	A
+
+;; ANSWER SECTION:
+upcheck.bosh-dns.	0	IN	A	127.0.0.1
+
+;; Query time: 0 msec
+;; SERVER: 169.254.0.2#53(169.254.0.2)
+;; WHEN: Mon Sep 24 15:00:59 UTC 2018
+;; MSG SIZE  rcvd: 66
+
+
+; <<>> DiG 9.9.5-3ubuntu0.17-Ubuntu <<>> +notcp +time=10 +tries=1 -p 53 upcheck.bosh-dns. @169.254.0.2
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8584
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;upcheck.bosh-dns.		IN	A
+
+;; ANSWER SECTION:
+upcheck.bosh-dns.	0	IN	A	127.0.0.1
+
+;; Query time: 0 msec
+;; SERVER: 169.254.0.2#53(169.254.0.2)
+;; WHEN: Mon Sep 24 15:00:59 UTC 2018
+;; MSG SIZE  rcvd: 66
+

@@ -1,0 +1,25 @@
+[File System] 2018/09/24 15:00:52 DEBUG - Glob ''
+[File System] 2018/09/24 15:00:52 DEBUG - Glob '/var/vcap/jobs/*/dns/aliases.json'
+[File System] 2018/09/24 15:00:52 DEBUG - Reading file /var/vcap/jobs/bosh-dns/dns/aliases.json
+[File System] 2018/09/24 15:00:52 DEBUG - Read content
+********************
+{}
+********************
+[File System] 2018/09/24 15:00:52 DEBUG - Glob '/var/vcap/jobs/*/dns/handlers.json'
+[File System] 2018/09/24 15:00:52 DEBUG - Reading file /var/vcap/jobs/bosh-dns/dns/handlers.json
+[File System] 2018/09/24 15:00:52 DEBUG - Read content
+********************
+[]
+********************
+[File System] 2018/09/24 15:00:52 DEBUG - Reading file /var/vcap/instance/dns/records.json
+[File System] 2018/09/24 15:00:52 DEBUG - Read content
+********************
+{"records":[["10.0.255.7","b216e007-12ca-4eb5-8c59-9e6ba781982e.app.private.greeter.bosh"],["10.0.255.8","2608fbdd-ca5d-4bd0-aa53-36f405a3ea1b.router.private.greeter.bosh"]],"version":2,"record_keys":["id","num_id","instance_group","group_ids","az","az_id","network","network_id","deployment","ip","domain","agent_id","instance_index"],"record_infos":[["b216e007-12ca-4eb5-8c59-9e6ba781982e","1","app",["1"],"z2","2","private","1","greeter","10.0.255.7","bosh","8409ffb9-c5af-4f4b-8dd3-261886851784",0],["2608fbdd-ca5d-4bd0-aa53-36f405a3ea1b","2","router",["2"],"z1","1","private","1","greeter","10.0.255.8","bosh","c9c77d4c-7aac-405b-9839-e468fdc49c46",0]]}
+********************
+[FailoverRecursor] 2018/09/24 15:00:52 INFO - starting preference: 169.254.169.254:53
+[server] 2018/09/24 15:00:52 DEBUG - done with upchecks
+[File System] 2018/09/24 15:00:53 DEBUG - Reading file /var/vcap/instance/dns/records.json
+[File System] 2018/09/24 15:00:53 DEBUG - Read content
+********************
+{"records":[["10.0.255.7","b216e007-12ca-4eb5-8c59-9e6ba781982e.app.private.greeter.bosh"],["10.0.255.8","2608fbdd-ca5d-4bd0-aa53-36f405a3ea1b.router.private.greeter.bosh"]],"version":2,"record_keys":["id","num_id","instance_group","group_ids","az","az_id","network","network_id","deployment","ip","domain","agent_id","instance_index"],"record_infos":[["b216e007-12ca-4eb5-8c59-9e6ba781982e","1","app",["1"],"z2","2","private","1","greeter","10.0.255.7","bosh","8409ffb9-c5af-4f4b-8dd3-261886851784",0],["2608fbdd-ca5d-4bd0-aa53-36f405a3ea1b","2","router",["2"],"z1","1","private","1","greeter","10.0.255.8","bosh","c9c77d4c-7aac-405b-9839-e468fdc49c46",0]]}
+********************

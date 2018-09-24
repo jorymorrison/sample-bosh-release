@@ -1,0 +1,20 @@
+[File System] 2018/09/24 15:00:55 DEBUG - Checking if file exists /etc/resolvconf/resolv.conf.d/head
+[File System] 2018/09/24 15:00:55 DEBUG - Stat '/etc/resolvconf/resolv.conf.d/head'
+[File System] 2018/09/24 15:00:55 DEBUG - Reading file /etc/resolvconf/resolv.conf.d/head
+[File System] 2018/09/24 15:00:55 DEBUG - Read content
+********************
+
+********************
+[File System] 2018/09/24 15:00:55 DEBUG - Writing /etc/resolvconf/resolv.conf.d/head
+[File System] 2018/09/24 15:00:55 DEBUG - Making dir /etc/resolvconf/resolv.conf.d with perm 0777
+[File System] 2018/09/24 15:00:55 DEBUG - Write content
+********************
+# This file was automatically updated by bosh-dns
+nameserver 169.254.0.2
+
+
+********************
+[Cmd Runner] 2018/09/24 15:00:55 DEBUG - Running command 'resolvconf -u'
+[Cmd Runner] 2018/09/24 15:00:55 DEBUG - Stdout: 
+[Cmd Runner] 2018/09/24 15:00:55 DEBUG - Stderr: 
+[Cmd Runner] 2018/09/24 15:00:55 DEBUG - Successful: true (0)

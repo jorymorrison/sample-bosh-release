@@ -1,0 +1,59 @@
++ set -o pipefail
++ RUN_DIR=/var/vcap/sys/run/bosh-dns
++ PIDFILE=/var/vcap/sys/run/bosh-dns/bosh_dns_health.pid
++ LOG_DIR=/var/vcap/sys/log/bosh-dns
++ JOB_DIR=/var/vcap/jobs/bosh-dns
++ DNS_PACKAGE=/var/vcap/packages/bosh-dns
++ SCRIPT_NAME=bosh_dns_health_ctl
++ main start
++ create_directories_and_chown_to_vcap
++ mkdir -p /var/vcap/sys/log/bosh-dns
++ chown -R vcap:vcap /var/vcap/sys/log/bosh-dns
++ mkdir -p /var/vcap/sys/run/bosh-dns
++ chown -R vcap:vcap /var/vcap/sys/run/bosh-dns
++ start_logging
++ exec
++ exec
++ set -o pipefail
++ RUN_DIR=/var/vcap/sys/run/bosh-dns
++ PIDFILE=/var/vcap/sys/run/bosh-dns/bosh-dns.pid
++ LOG_DIR=/var/vcap/sys/log/bosh-dns
++ JOB_DIR=/var/vcap/jobs/bosh-dns
++ DNS_PACKAGE=/var/vcap/packages/bosh-dns
++ SCRIPT_NAME=bosh_dns_ctl
++ main start
++ create_directories_and_chown_to_vcap
++ mkdir -p /var/vcap/sys/log/bosh-dns
+++ prepend_datetime
+++ awk -W interactive '{ system("echo -n [$(date +\"%Y-%m-%d %H:%M:%S%z\")]"); print " " $0 }'
++ chown -R vcap:vcap /var/vcap/sys/log/bosh-dns
+++ prepend_datetime
+++ awk -W interactive '{ system("echo -n [$(date +\"%Y-%m-%d %H:%M:%S%z\")]"); print " " $0 }'
++ mkdir -p /var/vcap/sys/run/bosh-dns
++ chown -R vcap:vcap /var/vcap/sys/run/bosh-dns
++ start_logging
++ exec
++ exec
+++ prepend_datetime
+++ awk -W interactive '{ system("echo -n [$(date +\"%Y-%m-%d %H:%M:%S%z\")]"); print " " $0 }'
+++ prepend_datetime
+++ awk -W interactive '{ system("echo -n [$(date +\"%Y-%m-%d %H:%M:%S%z\")]"); print " " $0 }'
++ set -o pipefail
++ RUN_DIR=/var/vcap/sys/run/bosh-dns
++ PIDFILE=/var/vcap/sys/run/bosh-dns/bosh_dns_resolvconf.pid
++ LOG_DIR=/var/vcap/sys/log/bosh-dns
++ DNS_PACKAGE=/var/vcap/packages/bosh-dns
++ SCRIPT_NAME=bosh_dns_resolvconf_ctl
++ main start
++ create_directories_and_chown_to_vcap
++ mkdir -p /var/vcap/sys/log/bosh-dns
++ chown -R vcap:vcap /var/vcap/sys/log/bosh-dns
++ mkdir -p /var/vcap/sys/run/bosh-dns
++ chown -R vcap:vcap /var/vcap/sys/run/bosh-dns
++ start_logging
++ exec
++ exec
+++ prepend_datetime
+++ awk -W interactive '{ system("echo -n [$(date +\"%Y-%m-%d %H:%M:%S%z\")]"); print " " $0 }'
+++ prepend_datetime
+++ awk -W interactive '{ system("echo -n [$(date +\"%Y-%m-%d %H:%M:%S%z\")]"); print " " $0 }'

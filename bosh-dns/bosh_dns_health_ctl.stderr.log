@@ -1,0 +1,9 @@
+[2018-09-24 15:00:52+0000] + case ${1} in
+[2018-09-24 15:00:52+0000] + start_process
+[2018-09-24 15:00:52+0000] + '[' -e /var/vcap/sys/run/bosh-dns/bosh_dns_health.pid ']'
+[2018-09-24 15:00:52+0000] + pushd /var/vcap/jobs/bosh-dns
+[2018-09-24 15:00:52+0000] + ulimit -v unlimited
+[2018-09-24 15:00:52+0000] + ulimit -n 4096
+[2018-09-24 15:00:52+0000] + popd
+[2018-09-24 15:00:52+0000] + echo 6710
+[2018-09-24 15:00:52+0000] + exec chpst -u vcap:vcap /var/vcap/packages/bosh-dns/bin/bosh-dns-health config/health_server_config.json
